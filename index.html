@@ -244,7 +244,11 @@ transform:translateY(-10px);
 </style>
 </head>
 
-<body>
+<body> 
+    <audio id="birthdayMusic"loop>
+        <source src="bithday-song.mp3 type="audio/mpeg">
+    </audio>
+
     <div id="p1" class="page active">
 
 <h1>please get you surprise💖</h1>
@@ -427,6 +431,10 @@ page.classList.remove("active");
 
 document.getElementById(id).classList.add("active");
 
+if(id==="page4"){
+    document.getElementByld("birthdayMusic").play();
+}
+    
 }
 
 function nextPage(num){
